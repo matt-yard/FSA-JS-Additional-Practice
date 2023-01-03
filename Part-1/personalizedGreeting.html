@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JS Practice Part 1</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script defer>
+      // Code Goes Here:
+      console.log("Hello World!");
+
+      // Declare a variable and assign it your first name
+
+      const firstName = "Tony";
+      const lastName = "Stark";
+      let age = 53;
+      const homeCity = "New York";
+
+      //Print a greeting
+      console.log(
+        `Hello! My name is ${firstName} ${lastName}! I'm ${age} years old, and I'm from ${homeCity}. It's nice to meet you!`
+      );
+
+      //Create a variable to hold your initials
+
+      const initials = firstName[0] + lastName[0];
+      console.log(initials);
+
+      // Name length:
+
+      const nameLength = (firstName + lastName).length;
+      console.log(nameLength);
+
+      //Bonus:
+      // First, i'll create a variable to hold my full name
+
+      const fullName = firstName + " " + lastName;
+      const nameUpper = fullName.toUpperCase();
+      console.log(nameUpper);
+
+      const nameLower = fullName.toLowerCase();
+      console.log(nameLower);
+
+      // Creating a sayGreeting Function
+
+      function sayGreeting(firstName, lastName, age, city) {
+        return `Hello! My name is ${firstName} ${lastName}! I'm ${age} years old, and I'm from ${city}. It's nice to meet you!`;
+      }
+
+      // Calling the function with different values
+      console.log(sayGreeting("Clark", "Kent", 42, "Smallville"));
+
+      // What happens if we leave off the city?
+      console.log(sayGreeting("Peter", "Parker", 16));
+    </script>
+  </head>
+  <body></body>
+</html>
