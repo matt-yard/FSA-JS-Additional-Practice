@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>JS Practice Part 1</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script defer>
+      // Code Goes Here:
+      console.log("Hello World!");
+
+      // Temperature Converter
+
+      // Create a variable called tempFahrenheit and assign it the value 75
+      const tempFahrenheit = 75;
+      // Convert tempFahrenheit to Celsius and store it in a variable called
+      // tempCelsius
+
+      const tempCelsius = (tempFahrenheit - 32) * (5 / 9);
+      console.log(tempCelsius);
+
+      // Convert tempCelsius to Kelvin and store it in a variable called
+      // tempKelvin
+      const tempKelvin = tempCelsius + 273.15;
+      console.log(tempKelvin);
+
+      // Create a string with todays forcast
+      const todaysForcast = `The current temperature outside is ${tempFahrenheit} degrees Fahrenheit, ${tempCelsius} degrees Celsius, and ${tempKelvin} degrees Kelvin.`;
+
+      console.log(todaysForcast);
+
+      // Bonus:
+      // Rounding the results with Math.floor()
+      const tempCelsiusRounded = Math.floor((tempFahrenheit - 32) * (5 / 9));
+      console.log(tempCelsiusRounded);
+
+      const tempKelvinRounded = Math.floor(tempCelsiusRounded + 273.15);
+      console.log(tempKelvinRounded);
+
+      // Creating a function
+      function temperatureConverter(fahrenheit) {
+        const celsius = Math.floor((fahrenheit - 32) * (5 / 9));
+        const kelvin = Math.floor(celsius + 273.15);
+
+        return `The current temperature outside is ${fahrenheit} degrees Fahrenheit, ${celsius} degrees Celsius, and ${kelvin} degrees Kelvin.`;
+      }
+
+      // Calling the function with different values
+      console.log(temperatureConverter(75));
+      console.log(temperatureConverter(-10));
+      console.log(temperatureConverter("80"));
+    </script>
+  </head>
+  <body></body>
+</html>
